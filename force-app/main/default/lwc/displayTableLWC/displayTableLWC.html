@@ -1,0 +1,17 @@
+<!-- Table to display Accounts and Products in a single table in 2 different columns -->
+<template>
+    <table class="slds-table slds-table_bordered">
+        <thead>
+            <th>Account Name</th>
+            <th>Product Name</th>
+        </thead>
+        <tbody>
+            <template for:each={wrapperList} for:item="i">
+                <tr key={i.id}>
+                    <td>{i.accName}</td>
+                    <td>{i.prodName}</td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+</template>
